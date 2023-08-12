@@ -1,0 +1,61 @@
+.addNEwContainer {
+  margin-left: 240px;
+  top: 20px;
+  overflow-y: hidden;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background for the form */
+}
+
+select,
+input {
+  margin-bottom: 15px;
+  padding: 10px 12px; /* Increased padding for more spacious feel */
+  border: 1px solid #d4d4d4;
+  border-radius: 6px; /* Slightly increased border-radius */
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  /* Make select and input elements take up full width of the form */
+  width: 100%;
+}
+
+select:focus,
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff80; /* Add glow effect on focus */
+}
+
+button {
+  padding: 10px 15px; /* Slightly increased padding */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px; /* Matching the border-radius with input fields */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(
+    -2px
+  ); /* Slight upward movement for a lift effect on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Resetting to default on button press */
+}

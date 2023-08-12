@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif; /* A default font to maintain consistency */
+}
+
+.leftBar {
+  width: 220px;
+  background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.leftItems {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px; /* Added top padding for some space from the top */
+  gap: 20px; /* Consistent spacing between items */
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%; /* Take full height of the parent */
+}
+
+.item {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 20px; /* Padding for clickability and spacing */
+  text-align: left;
+  font-size: 20px; /* Slightly reduced the font size for better fit */
+  transition: background-color 0.3s ease; /* Transition for smooth background color change */
+  border-left: 5px solid transparent; /* To create an active state indication */
+}
+
+.item:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slight background change on hover */
+}
+
+.item a {
+  text-decoration: none;
+  color: inherit; /* Ensure the link inherits the parent color, i.e., white */
+  display: block; /* Make the link block level to take full width of parent */
+  width: 100%;
+}
+
+/* Indicate the active link */
+.item .active {
+  border-left: 5px solid #e74c3c; /* Left border for active state */
+}

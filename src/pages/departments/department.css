@@ -1,0 +1,56 @@
+.departmentContainer {
+  margin-left: 240px;
+  top: 20px;
+  overflow-y: hidden;
+  padding: 40px;
+  background: #f5f5f5; /* Soft background color */
+}
+
+.boxess {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px; /* Increased gap for more space */
+}
+
+.boxx {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100px;
+  padding: 15px; /* Increase padding for a better look */
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #e6e6e6
+  ); /* Linear gradient for depth */
+  border-radius: 10px; /* Rounded corners for modern appearance */
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Transition for smooth effect */
+  cursor: pointer;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500; /* Semi-bold for better emphasis */
+  color: #2c3e50; /* Darker color for better contrast */
+}
+
+.boxx:hover {
+  background: linear-gradient(
+    145deg,
+    #e6e6e6,
+    #ffffff
+  ); /* Reversed gradient for hover effect */
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.boxx a {
+  text-decoration: none; /* Removing underline from links */
+  color: inherit; /* Taking color from parent, so it remains consistent */
+  transition: color 0.3s ease; /* Color transition for hover effect */
+}
+
+.boxx a:hover {
+  color: #007bff; /* Changing color on hover for feedback */
+}
